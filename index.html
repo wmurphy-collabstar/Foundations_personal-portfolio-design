@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winona Murphy - Home</title>
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <header>
-        <section class="logo-title">
-            <a href="./index.html"><img src="./assets/winona.jpeg" class="logo" alt="professional logo"/></a>
-            <h1><a href="./index.html">Winona Murphy</a></h1>
+    <header class="no-margin-or-padding flex-container">
+        <section class="logo-title no-margin-or-padding flex-container">
+            <a href="#"><img src="./assets/winona.jpeg" class="logo" alt="professional logo"/></a>
+            <h1><a href="#">Winona Murphy</a></h1>
         </section>
-        <nav>
+        <nav class="no-margin-or-padding flex-container">
             <ul>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./projects.html">My Projects</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a class="nav-link" href="#about-me">About Me</a></li>
+                <li><a class="nav-link" href="#projects">My Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <img alt="professional logo"/>
-        <section class="summary">
+        <section class="home" id="home">
+            <img src="./assets/winona.jpeg" class="big-logo" alt="professional logo"/>
             <p>
                 I am Winona Murphy, and I am from the Westchester area in New York. 
                 Raised as a singer and classical violinist, music is a big part of my life.
@@ -35,9 +36,150 @@
                 I currently work as a Web Developer at the Happy Coin, and in my free time, I play with my black cat.
             </p>
         </section>
+        <section class="about-me" id="about-me">
+            <section class="background">
+                <h2>About Me</h2>
+                <a class="nav-link" href="#projects">Scroll to Projects</a>
+                <img alt="Cover image 1">
+                <p>
+                    Born and raised in the Westchester, NY area, I grew up in a classical musician family, 
+                    and studied to be a professional violinist for over 12 years. 
+                    Once I was in college, I got excited by understanding how computers worked and making software of my own someday.
+                </p>
+                <p>
+                    After getting my BA at Wesleyan, I worked in IBM's Quantum Computing team as a Client Support Developer for 3 years. 
+                    I met so many amazing people and acquired many essential hard and soft skills, but I wanted to do more.
+                    I've been in pursuit of a software development career ever since.
+                </p>
+                <p>
+                    Currently, I'm passionate about web development, including the Frontend and UX design components. 
+                    It is my dream to build web apps that makes a users' lives easier, not harder. 
+                </p>
+    
+            </section>
+            <section class="skills">
+                <img alt="Cover image 2">
+                <p>My top three skills are <strong>Javascript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>, 
+                but my other skills include the following:</p>
+                <section class="skills-lists">
+                    <section class="hard-skills">
+                        <h3>Hard Skills</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Git/Github</li>
+                            <li>Tailwind CSS</li>
+                            <li>Google Cloud Platform</li>
+                        </ul>
+                    </section>
+                    <section class="soft-skills">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Agile</li>
+                            <li>Design thinking</li>
+                            <li>Customer support</li>
+                            <li>Cross-team collaboration</li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <section class="resume">
+                <a href="./assets/resume.pdf" target="_blank">Current Professional Resume</a>
+            </section>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <a class="nav-link" href="#contact">Scroll to Contact Form</a>
+            <div class="card">
+                <h3>Knitting Page</h3>
+                <img src="./assets/knitting-page-project.png" class="project-img" alt="view of knitting page"/>
+                <section class="description">
+                    <p>
+                        A single page website that talks about the different components of knitting, 
+                        including the knit and purl stitch, kind of yarn, kind of pattern, and overall project to knit.
+                        Skills Used: <span class="highlight">HTML</span> <span class="highlight">CSS</span>
+                    </p>
+                </section>
+                <section class="what-i-learned">
+                    <p>
+                        I learned how to cleanly and properly use Flexbox to order all my elements, 
+                        as well as the importance of color contrast and spacing in the visual hierarchy.
+                    </p>
+                </section>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Vacation Homepage</h3>
+                <img src="./assets/vacation-homepage-project.png" class="project-img" alt="view of cape may vacation homepage"/>
+                <section class="description">
+                    <p>
+                        A website that describes my favorite vacation spot, 
+                        Cape May and what to do or see there. Skills Used: <span class="highlight">HTML</span> 
+                        <span class="highlight">CSS</span> <span class="highlight">Figma</span>
+                    </p>
+                </section>
+                <section class="what-i-learned">
+                    <p>
+                        I learned how to navigate Figma, including getting specific values from the design, 
+                        and got a taste of modern design standards.
+                    </p>
+                </section>
+            </div>
+            <div class="card">
+                <h3>Leads Tracker</h3>
+                <img src="./assets/lead-tracker-project.png" class="project-img" alt="view of leads tracker chrome extension"/>
+                <section class="description">
+                    <p>
+                        A Chrome Extension that keeps track of website leads, 
+                        and can even add the current tab as a lead in the list.
+                        Skills Used: <span class="highlight">Javascript</span> <span class="highlight">HTML</span> 
+                        <span class="highlight">CSS</span>
+                    </p>
+                </section>
+                <section class="what-i-learned">
+                    <p>I learned how to create a Chrome Extension, and what Javascript is needed to make it happen.</p>
+                </section>
+            </div>
+            <div class="card">
+                <h3>Color Scheme Generator</h3>
+                <img src="./assets/color-scheme-generator-project.png" class="project-img" alt="view of color generator"/>
+                <section class="description">
+                    <p>
+                        A tool using API to create a color scheme with a color picker and a color scheme type.
+                        Skills Used: <span class="highlight">Javascript</span> <span class="highlight">HTML</span>
+                        <span class="highlight">CSS</span> <span class="highlight">Figma</span> <span class="highlight">REST APIs</span>
+                    </p>
+                </section>
+                <section class="what-i-learned">
+                    <p>I learned a lot more about color theory, color palletes and the default HTML color picker.</p>
+                </section>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <form class="no-margin-or-padding" method="post" action="#">
+                <h2>Contact Form</h2>
+                <div class="form-field">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-input" id="name" name="name" placeholder="Jack Beanstalk"/>
+                </div>
+                <div class="form-field">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" id="email" name="email" placeholder="jack.beanstalk@fablecometolife.com"/>
+                </div>
+                <div class="form-field">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-input" id="message" name="message"
+                              placeholder="After reading your profile on the top of the beanstalk, 
+                              I would like to meet over coffee. When works for you?"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <a class="nav-link" href="#">Scroll to top of page</a>
     </main>
     <footer>
-        <small>©2025 Winona Murphy</small>
+        <small>Winona Murphy © 2025</small>
+        <p>Connect with me!</p>
+        <a href="#"><img alt="linkedin icon"/></a>
+        <a href="#"><img alt="github icon"/></a>
     </footer>
 </body>
 </html>

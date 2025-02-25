@@ -1,0 +1,47 @@
+/*Variables for margin, padding, border, colors, and typography*/
+:root {
+    /*Image widths*/
+    --logo-width: 50px;
+    --big-logo-width: 200px;
+    --project-img-width: 250px;
+
+    /*Header spacing*/
+    --header-padding: 2rem;
+    --header-justify-content: space-between;
+}
+
+/*Enable smooth scrolling between linked sections*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Utility classes*/
+.no-margin-or-padding{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+/*Image Sizing (in order of content on page)*/
+.logo {
+    width: var(--logo-width);
+}
+
+.big-logo {
+    width: var(--big-logo-width);
+}
+
+.project-img{
+    width: var(--project-img-width);
+}
+
+/*Layout (in order of content on page)*/
+header {
+    justify-content: var(--header-justify-content);
+    padding: var(--header-padding);
+
+}
