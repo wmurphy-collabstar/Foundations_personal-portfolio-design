@@ -1,4 +1,4 @@
-/*Variables for margin, padding, border, colors, and typography*/
+/*Variables for size, spacing, border, colors, and typography*/
 :root {
     /*Image widths*/
     --logo-width: 50px;
@@ -103,7 +103,7 @@ html{
 }
 
 /*Main: Home*/
-.home {
+.home, .about-me, .projects {
     text-align: var(--home-text-align);
     width: var(--home-width);
     align-items: var(--home-align-items);
