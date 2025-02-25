@@ -7,7 +7,19 @@
 
     /*Header spacing*/
     --header-padding: 2rem;
-    --header-justify-content: space-between;
+
+    /*Logo/title spacing*/
+    --logo-title-width: 15rem;
+
+    /*Nav spacing*/
+    --nav-padding: 0 0 0 2rem;
+
+    /*Main spacing*/
+    --main-padding: 0 2em;
+
+    /*Footer spacing*/
+    --footer-padding: 1rem 2rem;
+
 }
 
 /*Enable smooth scrolling between linked sections*/
@@ -25,6 +37,15 @@ html{
     display: flex;
 }
 
+.justify-between-align-center{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.black-border {
+    border: 1px solid black;
+}
+
 
 /*Image Sizing (in order of content on page)*/
 .logo {
@@ -39,9 +60,48 @@ html{
     width: var(--project-img-width);
 }
 
-/*Layout (in order of content on page)*/
-header {
-    justify-content: var(--header-justify-content);
-    padding: var(--header-padding);
-
+/*Removes extra space on the bottom of an image anchor link*/
+.remove-anchor-img-space{
+    line-height: 0;
 }
+
+/*Layout (in order of content on page)*/
+
+/*Header*/
+.header {
+    padding: var(--header-padding);
+}
+
+.logo-title{
+    width: var(--logo-title-width);
+}
+
+.nav-link {
+    padding: var(--nav-padding);
+}
+
+/*Main*/
+.main {
+    padding: var(--main-padding);
+}
+
+/*Footer*/
+
+.footer {
+    padding: var(--footer-padding);
+}
+
+.connect {
+    width: 12rem;
+}
+
+/*Removes vertical margin around footer paragraph*/
+.connect-message {
+    margin-block: 0;
+}
+
+
+
+
+
+
