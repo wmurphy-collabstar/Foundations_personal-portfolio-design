@@ -5,6 +5,9 @@
     --big-logo-width: 200px;
     --project-img-width: 250px;
 
+    /*Image border radius*/
+    --logo-border-radius: 50%;
+
     /*Header spacing*/
     --header-padding: 2rem;
 
@@ -16,6 +19,13 @@
 
     /*Main spacing*/
     --main-padding: 0 2em;
+
+    /*Home spacing*/
+    --home-padding: 2em;
+    --home-text-align: justify;
+    --home-width: 50%;
+    --home-align-items: center;
+    --home-margin-top: 2em;
 
     /*Footer spacing*/
     --footer-padding: 1rem 2rem;
@@ -33,8 +43,13 @@ html{
     padding: 0;
 }
 
-.flex-container {
+.flex-container-row {
     display: flex;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .justify-between-align-center{
@@ -50,10 +65,12 @@ html{
 /*Image Sizing (in order of content on page)*/
 .logo {
     width: var(--logo-width);
+    border-radius: var(--logo-border-radius);
 }
 
 .big-logo {
     width: var(--big-logo-width);
+    border-radius: var(--logo-border-radius);
 }
 
 .project-img{
@@ -84,6 +101,22 @@ html{
 .main {
     padding: var(--main-padding);
 }
+
+/*Main: Home*/
+.home {
+    text-align: var(--home-text-align);
+    width: var(--home-width);
+    align-items: var(--home-align-items);
+    margin-top: var(--home-margin-top);
+    padding: var(--home-padding);
+}
+
+/*Main: About Me*/
+
+
+/*Main: Projects*/
+
+/*Main: Contact*/
 
 /*Footer*/
 
