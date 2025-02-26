@@ -23,6 +23,8 @@
     --content-width: 50%;
     --content-margin-top: 2em;
     --content-padding: 2em;
+    --content-border-radius: 20px;
+    --input-button-padding: 1rem 2rem;
 
     /*Home spacing*/
     --home-align-items: center;
@@ -33,7 +35,26 @@
     --list-align-items: center;
     --list-justify-content: start;
     --list-title-margin: 1rem 0 0;
+    --resume-margin: 2rem 0 0;
 
+    /*Projects spacing*/
+    --projects-width: 75%;
+    --card-width: 38%;
+    --card-padding: 1rem;
+    --card-align-items: center;
+    --card-margin: 0 0 2rem;
+    --card-image-width: 250px;
+    --card-image-height: 170px;
+
+    /*Contact spacing*/
+    --form-align-items: center;
+    --form-field-width: 75%;
+    --form-field-margin: 0 0 1rem;
+    --form-label-margin-bottom: .5rem;
+    --textarea-height: 10rem;
+
+    /*Contact typography*/
+    --submit-btn-font-size: 1.25rem;
 
     /*Footer spacing*/
     --footer-padding: 1rem 2rem;
@@ -142,18 +163,17 @@ html{
 }
 
 .resume{
-    margin-top: 2rem;
+    margin: var(--resume-margin);
 }
 
 .resume-link {
-    border: 1px solid blue;
-    padding: 1rem 2rem;
+    padding: var(--input-button-padding);
 }
 
 /*Main: Projects*/
 
 .projects {
-    width: 75%;
+    width: var(--projects-width);
 }
 
 .cards {
@@ -162,46 +182,46 @@ html{
 }
 
 .card {
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 38%;
-    padding: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
+    border-radius: var(--content-border-radius);
+    width: var(--card-width);
+    padding: var(--card-padding);
+    align-items: var(--card-align-items);
+    margin: var(--card-margin);
 }
 
 .project-img{
-    width: 250px;
-    height: 170px;
-    border-radius: 20px;
+    object-fit: cover;
+    width: var(--card-image-width);
+    height: var(--card-image-height);
+    border-radius: var(--content-border-radius);
     border: 3px solid green;
 }
 
 /*Main: Contact*/
 .form {
-    align-items: center;
+    align-items: var(--form-align-items);
 }
 
 .form-field{
-    width: 50%;
-    margin-bottom: 1rem;
+    width: var(--form-field-width);
+    margin: var(--form-field-margin);
 }
 
 .form-label{
-    margin-bottom: .5rem;
+    margin-bottom: var(--form-label-margin-bottom);
 }
 
 .form-input{
-    padding: .5rem 1rem;
+    padding: var(--input-button-padding);
 }
 
 textarea {
-    height: 10rem;
+    height: var(--textarea-height);
 }
 
 .submit-btn{
-    padding: .5rem 1rem;
-    font-size: 20px;
+    padding: var(--input-button-padding);
+    font-size: var(--submit-btn-font-size);
 }
 
 /*Footer*/
