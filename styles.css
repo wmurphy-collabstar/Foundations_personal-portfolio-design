@@ -5,9 +5,6 @@
     --big-logo-width: 200px;
     --project-img-width: 250px;
 
-    /*Image border radius*/
-    --logo-border-radius: 50%;
-
     /*Header spacing*/
     --header-padding: 2rem;
 
@@ -17,14 +14,17 @@
     /*Nav spacing*/
     --nav-padding: 0 0 0 2rem;
 
-    /*Main spacing*/
+    /*Main size and spacing*/
     --main-padding: 0 2em;
     --paragraph-text-align: justify; 
     --content-width: 50%;
     --content-margin-top: 2em;
     --content-padding: 2em;
-    --content-border-radius: 20px;
     --input-button-padding: 1rem 2rem;
+
+    /*Divider spacing*/
+    --section-divider-width: 60%;
+    --section-divider-height: 5px;
 
     /*Home spacing*/
     --home-align-items: center;
@@ -37,7 +37,7 @@
     --list-title-margin: 1rem 0 0;
     --resume-margin: 2rem 0 0;
 
-    /*Projects spacing*/
+    /*Projects size and spacing*/
     --projects-width: 75%;
     --card-width: 38%;
     --card-padding: 1rem;
@@ -46,7 +46,7 @@
     --card-image-width: 250px;
     --card-image-height: 170px;
 
-    /*Contact spacing*/
+    /*Contact size and spacing*/
     --form-align-items: center;
     --form-field-width: 75%;
     --form-field-margin: 0 0 1rem;
@@ -59,6 +59,58 @@
     /*Footer spacing*/
     --footer-padding: 1rem 2rem;
 
+    /*Colors for whole page*/
+    --background-color: #22577A;
+    --text-color: #FFF;
+    --border-color: #57CC99;
+    --divider-color: #FFF;
+    --header-footer-background-color: #FFF;
+    --header-footer-text-color: #22577A;
+    --header-footer-border-color: #22577A;
+    --card-background-color: #90ABBC;
+    --card-text-color: #0A1727;
+
+    /*Border styles*/
+    --content-border-radius: 20px;
+    --button-border-radius: 40px;
+    --content-border-width: 5px;
+    --logo-border-radius: 50%;
+    --small-logo-border-width: 2px;
+
+    /*Font styles*/
+    --content-font-family: 'Roboto', sans-serif;
+    --content-font-weight: 500;
+    --content-font-size: 30px;
+    --content-line-height: 50px;
+
+    --button-font-weight: 700;
+    --button-font-size: 30px;
+
+    --header-footer-font-size: 20px;
+    --header-footer-line-height: 40px;
+    --header-footer-text-decoration: none;
+    --nav-list-style: none;
+
+    --section-title-font-size: 40px;
+    --section-anchor-font-size: 25px;
+    --section-title-anchor-line-height: 40px;
+    --section-anchor-text-decoration: underline;
+
+    --skills-list-title-font-size: 30px;
+    --skills-list-body-font-size: 24px;
+    --skills-list-line-height: 40px;
+
+    --card-title-font-size: 24px;
+    --card-title-line-height: 40px;
+    --card-desc-font-size: 20px;
+    --card-desc-line-height: 30px;
+
+    --form-label-font-size: 30px;
+    --form-label-line-height: 40px;
+    --form-input-font-size: 20px;
+    --form-input-line-height: 40px;
+
+
 }
 
 /*Enable smooth scrolling between linked sections*/
@@ -67,6 +119,7 @@ html{
 }
 
 /*Utility classes*/
+/*Layout*/
 .no-margin-or-padding{
     margin: 0;
     padding: 0;
@@ -94,28 +147,73 @@ html{
     border: 1px solid black;
 }
 
-
-/*Image Sizing (in order of content on page)*/
-.logo {
-    width: var(--logo-width);
-    border-radius: var(--logo-border-radius);
-}
-
-.big-logo {
-    width: var(--big-logo-width);
-    border-radius: var(--logo-border-radius);
-}
-
-.project-img{
-    width: var(--project-img-width);
-}
-
 /*Removes extra space on the bottom of an image anchor link*/
 .remove-anchor-img-space{
     line-height: 0;
 }
 
+/*Colors*/
+.background-primary{
+    background-color: var(--background-color);
+}
+
+.background-secondary{
+    background-color: var(--card-background-color);
+}
+
+/*Borders*/
+.primary-border{
+    border: var(--content-border-width) solid var(--border-color);
+}
+
+.header-border{
+    border-bottom: var(--content-border-width) solid var(--background-color);
+}
+
+.footer-border{
+    border-top: var(--content-border-width) solid var(--background-color);
+}
+
+.small-logo-border{
+    border: var(--small-logo-border-width) solid var(--border-color);
+}
+
+.rounded-border{
+    border-radius: var(--content-border-radius);
+}
+
+.rounded-btn-border{
+    border-radius: var(--button-border-radius);
+}
+
+.circle-border{
+    border-radius: var(--logo-border-radius);
+}
+
+/*Fonts*/
+body, .form-input, textarea{
+    font-family: var(--content-font-family);
+    font-weight: var(--content-font-weight);
+}
+
+.header-footer-text{
+    color: var(--header-footer-text-color);
+}
+
 /*Layout (in order of content on page)*/
+
+/*Image Sizing (in order of content on page)*/
+.logo {
+    width: var(--logo-width);
+}
+
+.big-logo {
+    width: var(--big-logo-width);
+}
+
+.project-img{
+    width: var(--project-img-width);
+}
 
 /*Header*/
 .header {
@@ -182,7 +280,6 @@ html{
 }
 
 .card {
-    border-radius: var(--content-border-radius);
     width: var(--card-width);
     padding: var(--card-padding);
     align-items: var(--card-align-items);
@@ -193,8 +290,6 @@ html{
     object-fit: cover;
     width: var(--card-image-width);
     height: var(--card-image-height);
-    border-radius: var(--content-border-radius);
-    border: 3px solid green;
 }
 
 /*Main: Contact*/
