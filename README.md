@@ -12,7 +12,7 @@ My goal is to cleanly style my four different sections (Home, About Me, Projects
 - A footer containing the copyright information, and ways to connect to my social media (being Linkedin and/or Github)
 ## Running the project
 ### Live version
-[Portfolio Webpage](#)
+[Portfolio Webpage](https://singular-frangollo-bfe0ae.netlify.app/)
 ### From the repo
 1. Clone this repo locally
 2. Copy the path to the HTML file
