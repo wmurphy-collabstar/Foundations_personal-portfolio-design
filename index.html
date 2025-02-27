@@ -13,20 +13,20 @@
     <header class="header no-margin-or-padding flex-container-row justify-between-align-center header-border">
         <section class="logo-title no-margin-or-padding flex-container-row justify-between-align-center black-border">
             <a href="#" class="logo-link remove-anchor-img-space"><img src="./assets/winona.jpeg" class="logo small-logo-border circle-border no-margin-or-padding" alt="professional logo"/></a>
-            <h1 class="title no-margin-or-padding"><a href="#">Winona Murphy</a></h1>
+            <h1 class="title no-margin-or-padding"><a class="header-footer-text" href="#">Winona Murphy</a></h1>
         </section>
         <nav>
             <ul class="nav no-margin-or-padding flex-container-row black-border">
-                <li><a class="nav-link" href="#about-me">About Me</a></li>
-                <li><a class="nav-link" href="#projects">My Projects</a></li>
-                <li><a class="nav-link" href="#contact">Contact Me</a></li>
+                <li><a class="nav-link header-footer-text" href="#about-me">About Me</a></li>
+                <li><a class="nav-link header-footer-text" href="#projects">My Projects</a></li>
+                <li><a class="nav-link header-footer-text" href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
     <main class="main no-margin-no-padding flex-container-col justify-between-align-center background-primary black-border">
         <section class="home black-border flex-container-col" id="home">
             <img src="./assets/winona.jpeg" class="big-logo primary-border circle-border" alt="professional logo"/>
-            <p>
+            <p class="paragraph-text-style">
                 I am Winona Murphy, and I am from the Westchester, New York. 
                 I feel invincible when I debug code - including missed semicolons - 
                 and excited viewing intuitive designs.
@@ -34,33 +34,35 @@
                 I currently work as a Web Developer at the Happy Coin, and in my free time, I play with my black cat.
             </p>
         </section>
-        <section class="about-me black-border" id="about-me">
+        <section class="about-me flex-container-col justify-between-align-center black-border" id="about-me">
+            <div class="title-anchor text-align-center">
+                <h2 class="section-title">About Me</h2>
+                <a class="section-nav-link section-anchor-text-style black-border" href="#projects">Scroll to Projects</a>
+            </div>
+            <img class="about-me-img clouds" src="./assets/clouds.jpg" alt="view of sky above the clouds">
             <section class="background">
-                <h2 class="section-title text-align-center">About Me</h2>
-                <a class="nav-link" href="#projects">Scroll to Projects</a>
-                <img alt="Cover image 1">
-                <p>
+                <p class="paragraph-text-style">
                     Born and raised in the Westchester, NY area, I grew up in a classical musician family, 
                     and studied to be a professional violinist for over 12 years. 
                     Once I was in college, I got excited learning how computers worked and planned to make software of my own someday.
                 </p>
-                <p>
+                <p class="paragraph-text-style">
                     After getting my Bachelors degree at Wesleyan, I worked in IBM's Quantum Computing department as a Client Support Developer for 3 years. 
                     I met so many amazing people and acquired many essential hard and soft skills, but I wanted to do more.
                     I've been in pursuit of a software development career ever since.
                 </p>
-                <p>
+                <p class="paragraph-text-style">
                     Currently, I'm passionate about web development, including the Frontend and UX design components. 
                     It is my dream to build web apps that makes a users' lives easier and more enjoyable. 
                 </p>
     
             </section>
+            <img class="about-me-img work" src="./assets/work.jpg" alt="work desk with cup of coffee, pen and paper, computer and phone">
             <section class="skills no-margin-no-padding">
-                <img alt="Cover image 2">
-                <p>My top three skills are <strong>Javascript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>, 
+                <p class="paragraph-text-style">My top three skills are <strong>Javascript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>, 
                 but my other skills include the following:</p>
-                <section class="skills-lists flex-container-row">
-                    <section class="hard-skills flex-container-col background-secondary primary-border rounded-border">
+                <section class="skills-lists flex-container-row black-border">
+                    <section class="hard-skills card-text-color flex-container-col background-secondary primary-border rounded-border">
                         <h3 class="skills-title text-align-center">Hard Skills</h3>
                         <ul class="skills-body">
                             <li>Python</li>
@@ -69,7 +71,7 @@
                             <li>Google Cloud Platform</li>
                         </ul>
                     </section>
-                    <section class="soft-skills flex-container-col background-secondary primary-border rounded-border">
+                    <section class="soft-skills card-text-color flex-container-col background-secondary primary-border rounded-border">
                         <h3 class="skills-title text-align-center">Soft Skills</h3>
                         <ul class="skills-body">
                             <li>Agile</li>
@@ -80,15 +82,18 @@
                     </section>
                 </section>
             </section>
-            <section class="resume text-align-center">
-                <a href="./assets/resume.pdf" target="_blank" class="resume-link primary-border rounded-btn-border black-border">Check Out My Resume</a>
+            <section class="resume text-align-center black-border">
+                <a href="./assets/resume.pdf" target="_blank" class="resume-link button-text-style 
+                primary-border rounded-btn-border black-border">Check Out My Resume</a>
             </section>
         </section>
         <section class="projects black-border" id="projects">
-            <h2 class="section-title text-align-center">Projects</h2>
-            <a class="nav-link" href="#contact">Scroll to Contact Form</a>
+            <div class="title-anchor text-align-center">
+                <h2 class="section-title">Projects</h2>
+                <a class="section-nav-link section-anchor-text-style black-border" href="#contact">Scroll to Contact Form</a>
+            </div>
             <div class="cards flex-container-row">
-                <div class="card flex-container-col background-secondary primary-border rounded-border">
+                <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
                     <h3 class="card-title">Knitting Page</h3>
                     <img src="./assets/knitting-page-project.png" class="project-img primary-border" alt="view of knitting page"/>
                     <section class="description">
@@ -104,7 +109,7 @@
                         </p>
                     </section>
                 </div>
-                <div class="card flex-container-col background-secondary primary-border rounded-border">
+                <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
                     <h3 class="card-title">Vacation Homepage</h3>
                     <img src="./assets/vacation-homepage-project.png" class="project-img primary-border" alt="view of cape may vacation homepage"/>
                     <section class="description">
@@ -120,7 +125,7 @@
                         </p>
                     </section>
                 </div>
-                <div class="card flex-container-col background-secondary primary-border rounded-border">
+                <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
                     <h3 class="card-title">Leads Tracker</h3>
                     <img src="./assets/lead-tracker-project.png" class="project-img primary-border" alt="view of leads tracker chrome extension"/>
                     <section class="description">
@@ -133,7 +138,7 @@
                         <p>I learned how to create a Chrome Extension, and what Javascript is needed to make it happen.</p>
                     </section>
                 </div>
-                <div class="card flex-container-col background-secondary primary-border rounded-border">
+                <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
                     <h3 class="card-title">Color Scheme Generator</h3>
                     <img src="./assets/color-scheme-generator-project.png" class="project-img primary-border" alt="view of color generator"/>
                     <section class="description">
@@ -147,9 +152,12 @@
                 </div>
             </div>
         </section>
-        <section class="contact background-secondary primary-border rounded-border" id="contact">
+        <section class="contact card-text-color background-secondary primary-border rounded-border" id="contact">
             <form class="form no-margin-or-padding flex-container-col" method="post" action="#">
-                <h2>Contact Form</h2>
+                <div class="title-anchor text-align-center">
+                    <h2 class="section-title">Contact Form</h2>
+                    <a class="section-nav-link section-anchor-text-style black-border" href="#">Scroll to top of page</a>
+                </div>
                 <div class="form-field flex-container-col">
                     <label class="form-label" for="name">Name</label>
                     <input class="form-input primary-border" id="name" name="name" required placeholder="Jack Beanstalk"/>
@@ -163,22 +171,21 @@
                     <textarea class="form-input primary-border" id="message" name="message" required
                               placeholder="After reading your profile on top of the beanstalk, I want to learn more about your experience. When are you free for a coffee chat?"></textarea>
                 </div>
-                <button class="submit-btn primary-border rounded-btn-border background-primary" type="submit">Submit</button>
+                <button class="submit-btn button-text-style primary-border rounded-btn-border background-primary" type="submit">Submit</button>
             </form>
         </section>
-        <a class="nav-link" href="#">Scroll to top of page</a>
     </main>
-    <footer class="footer no-margin-or-padding flex-container-row justify-between-align-center footer-border">
+    <footer class="footer header-footer-text no-margin-or-padding flex-container-row justify-between-align-center footer-border">
         <small class="black-border">Winona Murphy © 2025</small>
         <section class="connect no-margin-or-padding flex-container-row justify-between-align-center black-border">
-            <p class="connect-message no-margin-or-padding">Connect with me!</p>
-            <a href="#" class="remove-anchor-img-space">
+            <p class="connect-message no-margin-or-padding remove-margin-block">Connect with me!</p>
+            <a href="https://www.linkedin.com/in/winona-murphy-840048170/" target="_blank" class="header-footer-text remove-anchor-img-space">
                 <svg stroke="currentColor" fill="currentColor" 
                 stroke-width="0" viewBox="0 0 448 512" size="22" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
                     <title>LinkedIn</title>
                     <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
                 </svg>
-            <a href="#" class="remove-anchor-img-space">
+            <a href="https://github.com/wmurphy-collabstar" target="_blank" class="header-footer-text remove-anchor-img-space">
                 <svg stroke="currentColor" fill="currentColor" 
                 stroke-width="0" viewBox="0 0 496 512" size="22" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
                     <title>Github</title>
