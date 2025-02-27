@@ -4,6 +4,11 @@
     --logo-width: 50px;
     --big-logo-width: 200px;
     --project-img-width: 250px;
+    --about-me-img-height: 402px;
+    --about-me-img-width: 100%;
+    --about-project-img-object-fit: cover;
+    --clouds-img-object-position: center bottom;
+    --work-img-object-position: center center;
 
     /*Header spacing*/
     --header-padding: 1rem 2rem;
@@ -21,6 +26,9 @@
     --content-margin: 2em 0;
     --content-padding: 2em;
     --input-button-padding: 1rem 2rem;
+    --section-title-margin-block: .5rem;
+    --about-section-title-margin-block-start: 2rem;
+    --title-anchor-margin-bottom: 1rem;
 
     /*Divider spacing*/
     --section-divider-width: 60%;
@@ -30,6 +38,7 @@
     --home-align-items: center;
 
     /*About spacing*/
+    --about-width: 100vw;
     --lists-container-justify-content: space-around;
     --lists-container-padding: 0 2em;
     --list-align-items: center;
@@ -39,6 +48,9 @@
 
     /*Projects size and spacing*/
     --projects-width: 75%;
+    --projects-padding-bottom: 0;
+    --cards-flex-wrap: wrap;
+    --cards-justify-content: space-around;
     --card-width: 38%;
     --card-padding: 1rem 2rem;
     --card-align-items: center;
@@ -47,6 +59,7 @@
     --card-image-height: 170px;
 
     /*Contact size and spacing*/
+    --contact-form-margin: 4rem 0;
     --form-align-items: center;
     --form-field-width: 75%;
     --form-field-margin: 0 0 1rem;
@@ -58,6 +71,7 @@
 
     /*Footer spacing*/
     --footer-padding: 1rem 2rem;
+    --footer-connect-width: 12rem;
 
     /*Colors for whole page*/
     --background-color: #22577A;
@@ -291,19 +305,19 @@ body, .form-input, textarea{
 }
 
 .about-me-img{
-    height: 402px;
-    width: 100%;
-    object-fit: cover;
+    height: var(--about-me-img-height);
+    width: var(--about-me-img-width);
+    object-fit: var(--about-project-img-object-fit);
     border-top: var(--content-border-width) solid var(--border-color);
     border-bottom: var(--content-border-width) solid var(--border-color);
 }
 
 .clouds{
-    object-position: center bottom;
+    object-position: var(--clouds-img-object-position);
 }
 
 .work{
-    object-position: center center;
+    object-position: var(--work-img-object-position);
 }
 
 /*Header*/
@@ -332,15 +346,15 @@ body, .form-input, textarea{
 }
 
 .section-title{
-    margin-block: .5rem;
+    margin-block: var(--section-title-margin-block);
 }
 
 .about-me .section-title{
-    margin-block-start: 2rem;
+    margin-block-start: var(--about-section-title-margin-block-start);
 }
 
 .title-anchor{
-    margin-bottom: 1rem;
+    margin-bottom: var(--title-anchor-margin-bottom);
 }
 
 .section-divider{
@@ -358,7 +372,7 @@ body, .form-input, textarea{
 
 /*Main: About Me*/
 .about-me{
-    width: 100vw;
+    width: var(--about-width);
     margin: var(--content-margin);
     text-align: var(--paragraph-text-align);
 }
@@ -398,12 +412,12 @@ body, .form-input, textarea{
 
 .projects {
     width: var(--projects-width);
-    padding-bottom: 0;
+    padding-bottom: var(--projects-padding-bottom);
 }
 
 .cards {
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: var(--cards-flex-wrap);
+    justify-content: var(--cards-justify-content);
 }
 
 .card {
@@ -414,14 +428,14 @@ body, .form-input, textarea{
 }
 
 .project-img{
-    object-fit: cover;
+    object-fit: var(--about-project-img-object-fit);
     width: var(--card-image-width);
     height: var(--card-image-height);
 }
 
 /*Main: Contact*/
 .contact{
-    margin: 4rem 0;
+    margin: var(--contact-form-margin);
 }
 
 .form {
@@ -457,7 +471,7 @@ textarea {
 }
 
 .connect {
-    width: 12rem;
+    width: var(--footer-connect-width);
 }
 
 
