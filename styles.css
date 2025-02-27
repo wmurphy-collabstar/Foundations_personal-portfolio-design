@@ -6,7 +6,7 @@
     --project-img-width: 250px;
 
     /*Header spacing*/
-    --header-padding: 2rem;
+    --header-padding: 1rem 2rem;
 
     /*Logo/title spacing*/
     --logo-title-width: 15rem;
@@ -16,9 +16,9 @@
 
     /*Main size and spacing*/
     --main-padding: 0 2em;
-    --paragraph-text-align: justify; 
-    --content-width: 75%;
-    --content-margin-top: 2em;
+    --paragraph-text-align: left; 
+    --content-width: 63%;
+    --content-margin: 2em 0;
     --content-padding: 2em;
     --input-button-padding: 1rem 2rem;
 
@@ -35,12 +35,12 @@
     --list-align-items: center;
     --list-justify-content: start;
     --list-title-margin: 1rem 0 0;
-    --resume-margin: 2rem 0 0;
+    --resume-margin: 2rem 0;
 
     /*Projects size and spacing*/
     --projects-width: 75%;
     --card-width: 38%;
-    --card-padding: 1rem;
+    --card-padding: 1rem 2rem;
     --card-align-items: center;
     --card-margin: 0 0 2rem;
     --card-image-width: 250px;
@@ -96,19 +96,19 @@
     --section-title-anchor-line-height: 40px;
     --section-anchor-text-decoration: underline;
 
-    --skills-list-title-font-size: 30px;
-    --skills-list-body-font-size: 24px;
-    --skills-list-line-height: 40px;
+    --skills-list-title-font-size: 1.25rem;
+    --skills-list-body-font-size: 1rem;
+    --skills-list-line-height: 20px;
 
-    --card-title-font-size: 24px;
-    --card-title-line-height: 40px;
-    --card-desc-font-size: 20px;
-    --card-desc-line-height: 30px;
+    --card-title-font-size: 1.25rem;
+    --card-title-line-height: 2rem;
+    --card-desc-font-size: 1rem;
+    --card-desc-line-height: 1.5rem;
 
-    --form-label-font-size: 30px;
-    --form-label-line-height: 40px;
-    --form-input-font-size: 20px;
-    --form-input-line-height: 40px;
+    --form-label-font-size: 1.125rem;
+    --form-label-line-height: 1.25rem;
+    --form-input-font-size: 1rem;
+    --form-input-line-height: 1.5rem;
 
 
 }
@@ -244,6 +244,37 @@ body, .form-input, textarea{
     text-decoration: var(--section-anchor-text-decoration);
 }
 
+.skill-list-title-text-style{
+    font-size: var(--skills-list-title-font-size);
+    line-height: var(--skills-list-line-height);
+}
+
+.skill-list-body-text-style{
+    font-size: var(--skills-list-body-font-size);
+    line-height: var(--skills-list-line-height);
+}
+
+.card-title-text-style{
+    font-size: var(--card-title-font-size);
+    line-height: var(--card-title-line-height);
+}
+
+.card-desc-text-style{
+    font-size: var(--card-desc-font-size);
+    line-height: var(--card-desc-line-height);
+}
+
+.form-label-text-style{
+    font-size: var(--form-label-font-size);
+    line-height: var(--form-label-line-height);
+    font-weight: var(--button-font-weight);
+}
+
+.form-input-text-style{
+    font-size: var(--form-input-font-size);
+    line-height: var(--form-input-line-height);
+}
+
 /*Layout (in order of content on page)*/
 
 /*Image Sizing (in order of content on page)*/
@@ -296,7 +327,7 @@ body, .form-input, textarea{
 .home, .projects, .contact{
     text-align: var(--paragraph-text-align);
     width: var(--content-width);
-    margin-top: var(--content-margin-top);
+    margin: var(--content-margin);
     padding: var(--content-padding);
 }
 
@@ -304,8 +335,20 @@ body, .form-input, textarea{
     margin-block: .5rem;
 }
 
+.about-me .section-title{
+    margin-block-start: 2rem;
+}
+
 .title-anchor{
     margin-bottom: 1rem;
+}
+
+.section-divider{
+    width: var(--section-divider-width);
+    height: var(--section-divider-height);
+    background-color: var(--header-footer-background-color);
+    border: none;
+    border-radius: var(--content-border-radius);
 }
 
 /*Main: Home*/
@@ -316,16 +359,14 @@ body, .form-input, textarea{
 /*Main: About Me*/
 .about-me{
     width: 100vw;
-    margin-top: var(--content-margin-top);
+    margin: var(--content-margin);
     text-align: var(--paragraph-text-align);
-    /* 
-    width: var(--content-width);
-    padding: var(--content-padding); */
 }
 
 .background, .skills, .resume {
     width: var(--content-width);
     text-align: var(--paragraph-text-align);
+    padding: var(--content-padding);
 }
 
 .skills-lists{
@@ -336,6 +377,7 @@ body, .form-input, textarea{
 .hard-skills, .soft-skills{
     align-items: var(--list-align-items);
     justify-content: var(--list-justify-content);
+    padding: var(--card-padding);
 }
 
 .skills-title{
@@ -344,7 +386,7 @@ body, .form-input, textarea{
 
 .resume{
     margin: var(--resume-margin);
-    padding: var(--content-padding);
+    padding: var(--input-button-padding);
     text-align: center;
 }
 
@@ -356,6 +398,7 @@ body, .form-input, textarea{
 
 .projects {
     width: var(--projects-width);
+    padding-bottom: 0;
 }
 
 .cards {
@@ -377,6 +420,10 @@ body, .form-input, textarea{
 }
 
 /*Main: Contact*/
+.contact{
+    margin: 4rem 0;
+}
+
 .form {
     align-items: var(--form-align-items);
 }

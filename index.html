@@ -11,20 +11,20 @@
 </head>
 <body class="no-margin-or-padding">
     <header class="header no-margin-or-padding flex-container-row justify-between-align-center header-border">
-        <section class="logo-title no-margin-or-padding flex-container-row justify-between-align-center black-border">
+        <section class="logo-title no-margin-or-padding flex-container-row justify-between-align-center">
             <a href="#" class="logo-link remove-anchor-img-space"><img src="./assets/winona.jpeg" class="logo small-logo-border circle-border no-margin-or-padding" alt="professional logo"/></a>
             <h1 class="title no-margin-or-padding"><a class="header-footer-text" href="#">Winona Murphy</a></h1>
         </section>
         <nav>
-            <ul class="nav no-margin-or-padding flex-container-row black-border">
+            <ul class="nav no-margin-or-padding flex-container-row">
                 <li><a class="nav-link header-footer-text" href="#about-me">About Me</a></li>
                 <li><a class="nav-link header-footer-text" href="#projects">My Projects</a></li>
                 <li><a class="nav-link header-footer-text" href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main no-margin-no-padding flex-container-col justify-between-align-center background-primary black-border">
-        <section class="home black-border flex-container-col" id="home">
+    <main class="main no-margin-no-padding flex-container-col justify-between-align-center background-primary">
+        <section class="home flex-container-col" id="home">
             <img src="./assets/winona.jpeg" class="big-logo primary-border circle-border" alt="professional logo"/>
             <p class="paragraph-text-style">
                 I am Winona Murphy, and I am from the Westchester, New York. 
@@ -34,10 +34,11 @@
                 I currently work as a Web Developer at the Happy Coin, and in my free time, I play with my black cat.
             </p>
         </section>
-        <section class="about-me flex-container-col justify-between-align-center black-border" id="about-me">
+        <hr class="section-divider no-margin-or-padding"/>
+        <section class="about-me flex-container-col justify-between-align-center" id="about-me">
             <div class="title-anchor text-align-center">
                 <h2 class="section-title">About Me</h2>
-                <a class="section-nav-link section-anchor-text-style black-border" href="#projects">Scroll to Projects</a>
+                <a class="section-nav-link section-anchor-text-style" href="#projects">Scroll to Projects</a>
             </div>
             <img class="about-me-img clouds" src="./assets/clouds.jpg" alt="view of sky above the clouds">
             <section class="background">
@@ -61,10 +62,10 @@
             <section class="skills no-margin-no-padding">
                 <p class="paragraph-text-style">My top three skills are <strong>Javascript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>, 
                 but my other skills include the following:</p>
-                <section class="skills-lists flex-container-row black-border">
+                <section class="skills-lists flex-container-row ">
                     <section class="hard-skills card-text-color flex-container-col background-secondary primary-border rounded-border">
-                        <h3 class="skills-title text-align-center">Hard Skills</h3>
-                        <ul class="skills-body">
+                        <h3 class="skills-title skill-list-title-text-style text-align-center">Hard Skills</h3>
+                        <ul class="skills-body skill-list-body-text-style">
                             <li>Python</li>
                             <li>Git/Github</li>
                             <li>Tailwind CSS</li>
@@ -72,8 +73,8 @@
                         </ul>
                     </section>
                     <section class="soft-skills card-text-color flex-container-col background-secondary primary-border rounded-border">
-                        <h3 class="skills-title text-align-center">Soft Skills</h3>
-                        <ul class="skills-body">
+                        <h3 class="skills-title skill-list-title-text-style text-align-center">Soft Skills</h3>
+                        <ul class="skills-body skill-list-body-text-style">
                             <li>Agile</li>
                             <li>Design thinking</li>
                             <li>Customer support</li>
@@ -82,27 +83,28 @@
                     </section>
                 </section>
             </section>
-            <section class="resume text-align-center black-border">
+            <section class="resume text-align-center no-margin-or-padding">
                 <a href="./assets/resume.pdf" target="_blank" class="resume-link button-text-style 
-                primary-border rounded-btn-border black-border">Check Out My Resume</a>
+                primary-border rounded-btn-border">Check Out My Resume</a>
             </section>
         </section>
-        <section class="projects black-border" id="projects">
+        <hr class="section-divider no-margin-or-padding"/>
+        <section class="projects" id="projects">
             <div class="title-anchor text-align-center">
                 <h2 class="section-title">Projects</h2>
-                <a class="section-nav-link section-anchor-text-style black-border" href="#contact">Scroll to Contact Form</a>
+                <a class="section-nav-link section-anchor-text-style" href="#contact">Scroll to Contact Form</a>
             </div>
             <div class="cards flex-container-row">
                 <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
-                    <h3 class="card-title">Knitting Page</h3>
+                    <h3 class="card-title card-title-text-style">Knitting Page</h3>
                     <img src="./assets/knitting-page-project.png" class="project-img primary-border" alt="view of knitting page"/>
-                    <section class="description">
+                    <section class="description card-desc-text-style">
                         <p>
                             A single page website that talks about the different components of knitting, 
                             including the knit and purl stitch, kind of yarn, kind of pattern, and overall project to knit.
                         </p>
                     </section>
-                    <section class="what-i-learned">
+                    <section class="what-i-learned card-desc-text-style">
                         <p>
                             I learned how to cleanly and properly use Flexbox to order all my elements, 
                             as well as the importance of color contrast and spacing in the visual hierarchy.
@@ -110,15 +112,15 @@
                     </section>
                 </div>
                 <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
-                    <h3 class="card-title">Vacation Homepage</h3>
+                    <h3 class="card-title card-title-text-style">Vacation Homepage</h3>
                     <img src="./assets/vacation-homepage-project.png" class="project-img primary-border" alt="view of cape may vacation homepage"/>
-                    <section class="description">
+                    <section class="description card-desc-text-style">
                         <p>
                             A website that describes my favorite vacation spot, 
                             Cape May and what to do or see there.
                         </p>
                     </section>
-                    <section class="what-i-learned">
+                    <section class="what-i-learned card-desc-text-style">
                         <p>
                             I learned how to navigate Figma, including getting specific values from the design, 
                             and got a taste of modern design standards.
@@ -126,49 +128,50 @@
                     </section>
                 </div>
                 <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
-                    <h3 class="card-title">Leads Tracker</h3>
+                    <h3 class="card-title card-title-text-style">Leads Tracker</h3>
                     <img src="./assets/lead-tracker-project.png" class="project-img primary-border" alt="view of leads tracker chrome extension"/>
-                    <section class="description">
+                    <section class="description card-desc-text-style">
                         <p>
                             A Chrome Extension that keeps track of website leads, 
                             and can even add the current tab as a lead in the list.
                         </p>
                     </section>
-                    <section class="what-i-learned">
+                    <section class="what-i-learned card-desc-text-style">
                         <p>I learned how to create a Chrome Extension, and what Javascript is needed to make it happen.</p>
                     </section>
                 </div>
                 <div class="card flex-container-col card-text-color background-secondary primary-border rounded-border">
-                    <h3 class="card-title">Color Scheme Generator</h3>
+                    <h3 class="card-title card-title-text-style">Color Scheme Generator</h3>
                     <img src="./assets/color-scheme-generator-project.png" class="project-img primary-border" alt="view of color generator"/>
-                    <section class="description">
+                    <section class="description card-desc-text-style">
                         <p>
                             A tool using API to create a color scheme with a color picker and a color scheme type.
                         </p>
                     </section>
-                    <section class="what-i-learned">
+                    <section class="what-i-learned card-desc-text-style">
                         <p>I learned a lot more about color theory, color palletes and the default HTML color picker.</p>
                     </section>
                 </div>
             </div>
         </section>
+        <hr class="section-divider no-margin-or-padding"/>
         <section class="contact card-text-color background-secondary primary-border rounded-border" id="contact">
-            <form class="form no-margin-or-padding flex-container-col" method="post" action="#">
+            <form class="form no-margin-or-padding flex-container-col">
                 <div class="title-anchor text-align-center">
                     <h2 class="section-title">Contact Form</h2>
-                    <a class="section-nav-link section-anchor-text-style black-border" href="#">Scroll to top of page</a>
+                    <a class="section-nav-link section-anchor-text-style" href="#">Scroll to top of page</a>
                 </div>
                 <div class="form-field flex-container-col">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-input primary-border" id="name" name="name" required placeholder="Jack Beanstalk"/>
+                    <label class="form-label form-label-text-style" for="name">Name</label>
+                    <input class="form-input form-input-text-style primary-border" id="name" name="name" required placeholder="Jack Beanstalk"/>
                 </div>
                 <div class="form-field flex-container-col">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-input primary-border" id="email" name="email" required placeholder="jack.beanstalk@fablecometolife.com"/>
+                    <label class="form-label form-label-text-style" for="email">Email</label>
+                    <input class="form-input form-input-text-style primary-border" id="email" name="email" required placeholder="jack.beanstalk@fablecometolife.com"/>
                 </div>
                 <div class="form-field flex-container-col">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-input primary-border" id="message" name="message" required
+                    <label class="form-label form-label-text-style">Message</label>
+                    <textarea class="form-input form-input-text-style primary-border" id="message" name="message" required
                               placeholder="After reading your profile on top of the beanstalk, I want to learn more about your experience. When are you free for a coffee chat?"></textarea>
                 </div>
                 <button class="submit-btn button-text-style primary-border rounded-btn-border background-primary" type="submit">Submit</button>
@@ -176,8 +179,8 @@
         </section>
     </main>
     <footer class="footer header-footer-text no-margin-or-padding flex-container-row justify-between-align-center footer-border">
-        <small class="black-border">Winona Murphy © 2025</small>
-        <section class="connect no-margin-or-padding flex-container-row justify-between-align-center black-border">
+        <small>Winona Murphy © 2025</small>
+        <section class="connect no-margin-or-padding flex-container-row justify-between-align-center">
             <p class="connect-message no-margin-or-padding remove-margin-block">Connect with me!</p>
             <a href="https://www.linkedin.com/in/winona-murphy-840048170/" target="_blank" class="header-footer-text remove-anchor-img-space">
                 <svg stroke="currentColor" fill="currentColor" 
